@@ -11,7 +11,7 @@ See Apple's [In-App Purchase Programming Guide](http://developer.apple.com/libra
 
 ## Installation
 
-    $ gem install venice
+    gem 'venice', github: 'balinaanna/venice'
 
 ## Usage
 
