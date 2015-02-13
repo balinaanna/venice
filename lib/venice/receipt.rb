@@ -87,7 +87,11 @@ module Venice
       end
 
       def verify!(data, options = {})
-        client = Client.production
+        if options[:sandbox]
+          client = Client.development
+        else
+          client = Client.production
+        end
 
         begin
           client.verify!(data, options)
